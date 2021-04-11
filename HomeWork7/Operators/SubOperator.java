@@ -1,4 +1,4 @@
-package HomeWork5.Operators;
+package HomeWork7.Operators;
 
 public class SubOperator implements Operator {
     @Override

@@ -1,6 +1,6 @@
-package HomeWork5;
+package HomeWork7;
 
-import HomeWork5.Operators.*;
+import HomeWork7.Operators.*;
 
 public class Calculator {
     Operator operator;
