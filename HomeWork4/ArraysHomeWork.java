@@ -35,5 +35,9 @@ public class ArraysHomeWork {
 
         array[maxNegativeIndex] = minPositive;
         array[minPositiveIndex] = maxNegative;
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + ", ");
+        }
     }
 }
