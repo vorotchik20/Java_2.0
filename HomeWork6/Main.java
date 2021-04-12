@@ -1,14 +1,22 @@
 package HomeWork6;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
+import java.io.*;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        String string = "";
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите путь к файлу");
+        String filePath = scanner.next();
+        File file = new File(filePath);
+        try {
+            Scanner fileScanner = new Scanner(file);
+            string = fileScanner.nextLine();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         HashMap<String, Integer> map = new HashMap();
-        String string = "alex ferg greg alex ferg alex";
         String[] array = string.split(" ");
         ArrayList<String> list = new ArrayList<>();
         Collections.addAll(list, array);
